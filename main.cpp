@@ -10,7 +10,7 @@ using namespace std;
 
 
 //function prototype
-double velocity(); 
+int velocityCalc(); 
 
 
 int main() 
@@ -41,6 +41,7 @@ cout <<"\n Enter selection: ";
 
 cin>>selection;
 
+//char validateChar(selection &);
  
 
 switch(selection)
@@ -49,7 +50,7 @@ switch(selection)
 
 case 'V' :
 
-case 'v' :{double velocity;}
+case 'v' :{velocityCalc();}
 
 break;
 
@@ -106,7 +107,7 @@ return 0;
 }
 
 // Velocity Function
-double velocity ()
+int velocityCalc ()
 {
         //Input
         double ds; 
@@ -127,5 +128,7 @@ double velocity ()
         //Output:
 
         cout << v << dsUnits << "/" << dtUnits << endl;  
-  return 0;
+
+        return 0;
+  
 }
